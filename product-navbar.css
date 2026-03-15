@@ -1,0 +1,112 @@
+/* ===== PRODUCT PAGE THEME TOGGLE FIX ===== */
+body {
+    padding-top: 70px !important;
+  }
+.theme-toggle{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  /* background: rgba(255,255,255,0.15); */
+  border: 1px solid rgba(7, 7, 7, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  flex-shrink: 0;
+  background:rgb(45, 144, 153);
+
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px rgba(0,224,255,0.6);
+  background:rgba(0,224,255,0.35);
+}
+
+
+/* desktop only */
+@media (max-width: 900px){
+  .theme-toggle{
+    display: none;
+  }
+  /* remove blue line/strip on left in responsive */
+  html, body {
+    overflow-x: hidden;
+    border-left: none !important;
+    outline: none !important;
+  }
+  .navbar,
+  .product-search-section,
+  .hero-bg,
+  .products,
+  .mobile-hamburger {
+    outline: none;
+  }
+  .mobile-hamburger:focus {
+    outline: none;
+  }
+  /* ensure search section doesn't create a left edge strip */
+  .product-search-section {
+    padding-left: 16px;
+  }
+}
+
+
+/* ===== PRODUCT SEARCH BAR ===== */
+.product-search-section {
+  padding: 16px 24px;
+  background: var(--nav-bg, #001f3f);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.search-wrap {
+  display: flex;
+  gap: 10px;
+  max-width: 520px;
+  margin: 0 auto 10px;
+}
+.product-search-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid rgba(19, 18, 18, 0.3);
+  border-radius: 8px;
+  background: white;
+  color: #fff;
+  font-size: 1rem;
+}
+.product-search-input::placeholder {
+  color: rgba(12, 12, 12, 0.6);
+}
+.product-search-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent, #00e0ff);
+  color: #050b14;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product-search-btn:hover {
+  opacity: 0.9;
+}
+.search-hint {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+}
+.product-tag {
+  cursor: pointer;
+  color: var(--accent, #00e0ff);
+  text-decoration: underline;
+  margin: 0 4px;
+}
+.product-tag:hover {
+  opacity: 0.9;
+}
+
+/* Hide search bar in responsive */
+@media (max-width: 768px) {
+  .product-search-section {
+    display: none !important;
+  }
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>VJRA Technologies – Smart Meter</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="prod_style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="nav-left">
+
+<a href="index.html">
+<img src="./assets/logo.png" class="logo">
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="product.html">Products</a></li>
+
+<li class="dropdown">
+
+<span class="drop-btn">Portals ▾</span>
+
+<ul class="dropdown-menu">
+
+<li><a href="#">SMART CHARGING</a></li>
+<li><a href="#">SMART METER</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="index.html#contact">Contact Us</a></li>
+
+</ul>
+
+
+<div class="mobile-hamburger" id="hamburger">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+<div class="nav-right">
+
+<button id="themeToggle" class="theme-toggle">🌙</button>
+
+<div class="user-menu">
+
+<span class="user-icon">👤</span>
+
+<div class="user-dropdown">
+
+<a href="login.html">🔐 Login</a>
+<a href="register.html">📝 Register</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- PRODUCT -->
+<section class="product-section">
+
+<div class="card-row">
+
+<div class="product-card">
+
+<div class="product-grid">
+
+
+<!-- IMAGE -->
+
+<div class="product-gallery">
+
+<div class="product-image-main">
+
+<img id="mainProductImage" src="./assets/smart meter (1).png">
+
+</div>
+
+<div class="product-thumbs">
+
+<img src="./assets/smart meter (1).png" class="thumb active" onclick="changeImage(this)">
+<img src="./assets/smart meter (1).png" class="thumb" onclick="changeImage(this)">
+<img src="./assets/smart meter (1).png" class="thumb" onclick="changeImage(this)">
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT INFO -->
+
+<div class="product-config">
+
+<h1 class="product-title">SMART METER</h1>
+
+<p class="product-subtitle">Single Phase Smart Energy Meter</p>
+
+
+<div class="power-badge">
+
+⚡ 40A Rated Meter
+
+</div>
+
+
+
+<!-- CONNECTIVITY -->
+
+<div class="config-block">
+
+<p class="config-label">Connectivity</p>
+
+<div class="config-options">
+
+<button class="config-btn active" id="btnWifi">WiFi</button>
+<button class="config-btn" id="btn4g">4G</button>
+
+</div>
+
+</div>
+
+
+
+<!-- COMPATIBILITY -->
+
+<div class="compatibility">
+
+<span class="vehicle">🏠</span>
+<span class="vehicle">🏭</span>
+
+<p>Compatible with Home & Industrial Energy Monitoring</p>
+
+</div>
+
+
+
+<!-- PRICE -->
+
+<div class="product-price">
+
+₹<span id="price">4000</span>
+
+</div>
+
+
+
+<!-- BUTTONS -->
+
+<div class="product-actions">
+
+<button class="btn-outline">Add to Cart</button>
+<button class="btn-primary">Buy Now</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WHY SMART METER -->
+<section class="why-glide">
+
+<div class="why-container">
+
+<h2 class="why-title">Why Choose Smart Meter</h2>
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="why-icon">⚡</div>
+
+<h3>Real Time Monitoring</h3>
+
+<p>
+Track electricity consumption instantly through the VJRA web dashboard.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">📊</div>
+
+<h3>Energy Analytics</h3>
+
+<p>
+Detailed consumption analytics help optimize electricity usage.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">🔒</div>
+
+<h3>Tamper Protection</h3>
+
+<p>
+Secure tamper detection protects your energy system from misuse.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">🌐</div>
+
+<h3>Remote Control</h3>
+
+<p>
+Remotely control and monitor energy flow through cloud connectivity.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SPECIFICATIONS -->
+<section class="specs-wrap">
+
+<div class="spec-title">⚡ Smart Meter Specification</div>
+
+
+
+<div class="spec-block">
+
+<h3>General</h3>
+
+<div class="spec-two-col">
+
+<div class="spec-text">Model <span>SMETER</span></div>
+<div class="spec-text">Color <span>Off-White</span></div>
+<div class="spec-text">Dimensions <span>110 × 110 × 80 mm</span></div>
+<div class="spec-text">Weight <span>0.8 kg</span></div>
+
+<div class="spec-text">Weather Protection <span>IP54 Rated</span></div>
+<div class="spec-text">Communication <span>MQTT</span></div>
+<div class="spec-text">Monitoring <span>VJRA Web App</span></div>
+
+</div>
+
+</div>
+
+
+
+<div class="spec-block">
+
+<h3>Technical</h3>
+
+<div class="spec-two-col">
+
+<div class="spec-text">Max Power <span>10 kW</span></div>
+<div class="spec-text">Input Voltage <span>240V Single Phase</span></div>
+<div class="spec-text">Current Rating <span>40A</span></div>
+<div class="spec-text">Frequency <span>50Hz</span></div>
+
+<div class="spec-text">Connectivity <span>WiFi / GSM</span></div>
+<div class="spec-text">Installation <span>DIN Rail</span></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- RESOURCES -->
+<section class="resources-section">
+
+<div class="resources-overlay"></div>
+
+<div class="resources-content">
+
+<div class="resources-text">
+
+<h2>Explore our Expert Resources</h2>
+
+<p>
+Download manuals and warranty documents for Smart Meter installation and usage.
+</p>
+
+</div>
+
+
+<div class="resources-cards">
+
+<div class="resource-card">
+
+<div class="card-icon">📄</div>
+
+<h4>Smart Meter Manual</h4>
+
+<p>Product installation and technical guide.</p>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="card-icon">🛡️</div>
+
+<h4>Warranty Guide</h4>
+
+<p>Warranty information and product coverage.</p>
+
+</div>
+
+</div>
+
+
+<div class="download-btn-wrap">
+
+<button class="download-btn">
+
+⬇ Download Resource
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<img src="./assets/logo.png" class="footer-logo">
+
+<p>
+VJRA Technologies builds smart energy solutions including EV charging,
+smart prepaid metering and industrial energy monitoring.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Company</h4>
+
+<ul>
+
+<li><a href="product.html">Products</a></li>
+<li><a href="index.html#about">About Us</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Products</h4>
+
+<ul>
+
+<li><a href="prod1.html">GLIDE 1</a></li>
+<li><a href="prod2.html">GLIDE 3</a></li>
+<li><a href="prod3.html">Smart Meter</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>
+Email:<br>
+<a href="mailto:support@vjratechnologies.com">
+support@vjratechnologies.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>© 2026 VJRA Technologies LLP</p>
+
+</div>
+
+</footer>
+
+
+
+
+<!-- IMAGE SWITCH SCRIPT -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+   const btn6a = document.getElementById("btn6a");
+  const btn16a = document.getElementById("btn16a");
+  const price = document.getElementById("price");
+
+  btn6a.addEventListener("click", () => {
+    price.innerText = "4000";
+    btn6a.classList.add("active");
+    btn16a.classList.remove("active");
+  });
+
+  btn16a.addEventListener("click", () => {
+    price.innerText = "5000";
+    btn16a.classList.add("active");
+    btn6a.classList.remove("active");
+  });
+
+  // Toggle product info on mobile
+  const toggleBtn = document.getElementById("toggleInfoBtn");
+  const productInfo = document.querySelector(".product-info");
+
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", function() {
+    productInfo.classList.toggle("show");
+    toggleBtn.textContent = productInfo.classList.contains("show") 
+      ? "Hide Details ↑" 
+      : "View Details ↓";
+  });
+}
+
+
+
+</script>
+
+
+</body>
+</html>

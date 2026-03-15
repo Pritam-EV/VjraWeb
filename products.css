@@ -1,0 +1,459 @@
+/* ========================================
+PRODUCT HERO SECTION
+======================================== */
+
+/* ========================================
+ANIMATED HERO BACKGROUND
+======================================== */
+
+
+/* ========================================
+ADVANCED HERO BACKGROUND
+Darker + Stronger Color Animation
+======================================== */
+
+.product-hero{
+
+height:55vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+
+/* darker base with brighter accent colors */
+
+background:linear-gradient(
+-45deg,
+#010814,
+#03112e,
+#06204a,
+#0a1e3a,
+#001f3f,
+#03112e
+);
+
+background-size:600% 600%;
+
+/* faster and smoother animation */
+
+animation:heroGradient 6s ease-in-out infinite;
+
+position:relative;
+overflow:hidden;
+
+}
+
+
+
+/* darker overlay for contrast */
+
+.product-hero::after{
+
+content:"";
+
+position:absolute;
+inset:0;
+
+background:radial-gradient(
+circle at center,
+rgba(0,0,0,0.1),
+rgba(0,0,0,0.6)
+);
+
+pointer-events:none;
+
+}
+
+
+
+/* energy particles */
+
+.product-hero::before{
+
+content:"";
+
+position:absolute;
+inset:0;
+
+background-image:
+
+radial-gradient(circle at 20% 30%, rgba(0,224,255,0.9) 2px, transparent 3px),
+radial-gradient(circle at 80% 40%, rgba(0,224,255,0.8) 2px, transparent 3px),
+radial-gradient(circle at 60% 70%, rgba(0,224,255,0.8) 2px, transparent 3px),
+radial-gradient(circle at 40% 60%, rgba(0,224,255,0.7) 2px, transparent 3px),
+radial-gradient(circle at 10% 80%, rgba(0,224,255,0.7) 2px, transparent 3px);
+
+background-size:260px 260px;
+
+animation:particleMove 8s linear infinite;
+
+opacity:0.9;
+
+pointer-events:none;
+
+}
+
+
+
+/* background gradient movement */
+
+@keyframes heroGradient{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+
+
+/* particle floating animation */
+
+@keyframes particleMove{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-45px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.hero-inner{
+  max-width:800px;
+}
+
+.product-hero h1{
+  font-size:42px;
+  color:#ffffff;
+  margin-bottom:10px;
+  letter-spacing:0.5px;
+}
+
+.product-hero p{
+  font-size:18px;
+  color:#dcefff;
+}
+
+
+
+/* ========================================
+PRODUCT SECTION
+======================================== */
+
+.products-section{
+  padding:80px 20px;
+}
+
+.products-section .section-title{
+  text-align:center;
+  margin-bottom:50px;
+  color:var(--accent);
+  font-size:2.2rem;
+}
+
+
+
+/* ========================================
+PRODUCT GRID
+======================================== */
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+
+
+/* ========================================
+PRODUCT CARD
+======================================== */
+
+/* ========================================
+GLASSMORPHISM PRODUCT CARDS
+======================================== */
+
+.product-card{
+
+  background:rgba(255, 255, 255, 0.048);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  border-radius:18px;
+
+  padding:20px;
+
+  text-align:center;
+
+  transition:all 0.35s ease;
+
+  cursor:pointer;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+
+
+/* glowing hover effect */
+
+.product-card:hover{
+
+  transform:translateY(-10px) scale(1.02);
+
+  border:1px solid rgba(0,224,255,0.6);
+
+  box-shadow:
+
+  0 20px 50px rgba(0,224,255,0.25),
+
+  inset 0 0 20px rgba(0,224,255,0.05);
+
+}
+
+
+
+/* subtle animated shine */
+
+.product-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-100%;
+
+  width:100%;
+  height:100%;
+
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+
+  transition:0.6s;
+
+}
+
+
+
+.product-card:hover::before{
+
+  left:100%;
+
+}
+
+
+
+/* Product Image */
+
+.product-card img{
+
+  width:100%;
+
+  height:200px;
+
+  object-fit:contain;
+
+  margin-bottom:18px;
+
+  filter:drop-shadow(0 12px 25px rgba(0,0,0,0.6));
+
+}
+
+
+
+/* Product Title */
+
+.product-card h3{
+
+  color:var(--accent);
+
+  font-size:22px;
+
+  margin-bottom:6px;
+
+  letter-spacing:0.6px;
+
+}
+
+
+
+/* Subtitle */
+
+.product-card .subtitle{
+
+  color:#dcefff;
+
+  font-size:14px;
+
+  margin-bottom:15px;
+
+}
+
+
+
+/* Feature List */
+
+.product-card ul{
+
+  list-style:none;
+
+  padding:0;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.product-card li{
+
+  font-size:13px;
+
+  margin:6px 0;
+
+  color:#7fffd4;
+
+}
+
+
+
+/* Button */
+
+.product-card button{
+
+  background:linear-gradient(135deg,#04bfbf,#0083b0);
+
+  border:none;
+
+  padding:10px 22px;
+
+  border-radius:25px;
+
+  color:#00111f;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+
+
+/* Button Hover */
+
+.product-card button:hover{
+
+  transform:translateY(-2px);
+
+}
+
+
+
+/* ========================================
+RESPONSIVE DESIGN
+======================================== */
+
+@media(max-width:768px){
+
+  .product-hero{
+    height:45vh;
+  }
+
+  .product-hero h1{
+    font-size:28px;
+  }
+
+  .product-hero p{
+    font-size:15px;
+  }
+
+  .products-section{
+    padding:60px 15px;
+  }
+
+  .product-card img{
+    height:180px;
+  }
+
+  .product-card{
+
+ background:rgba(255, 255, 255, 0.048);
+
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+
+border:1px solid rgba(0,224,255,0.35);
+
+box-shadow:
+0 10px 25px rgba(0,0,0,0.4),
+inset 0 0 10px rgba(255,255,255,0.05);
+
+}
+.product-card::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+border-radius:18px;
+
+box-shadow:
+0 0 20px rgba(0,224,255,0.25);
+
+pointer-events:none;
+
+}
+
+}
+
+
+
+/* ========================================
+SMALL PHONES
+======================================== */
+
+@media(max-width:480px){
+
+  .product-hero{
+    height:40vh;
+  }
+
+  .product-hero h1{
+    font-size:24px;
+  }
+
+  .product-hero p{
+    font-size:14px;
+  }
+
+}

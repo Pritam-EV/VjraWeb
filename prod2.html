@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>VJRA Technologies – GLIDE 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="prod_style.css">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="nav-left">
+
+<a href="index.html">
+<img src="./assets/logo.png" class="logo">
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="product.html">Products</a></li>
+
+<li class="dropdown">
+
+<span class="drop-btn">Portals ▾</span>
+
+<ul class="dropdown-menu">
+
+<li><a href="#">SMART CHARGING</a></li>
+<li><a href="#">SMART METER</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="index.html#contact">Contact Us</a></li>
+
+</ul>
+
+<div class="mobile-hamburger" id="hamburger">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+<div class="nav-right">
+
+<button id="themeToggle" class="theme-toggle">🌙</button>
+
+<div class="user-menu">
+
+<span class="user-icon">👤</span>
+
+<div class="user-dropdown">
+
+<a href="login.html">🔐 Login</a>
+<a href="register.html">📝 Register</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- PRODUCT -->
+<section class="product-section">
+
+<div class="card-row">
+
+<div class="product-card">
+
+<div class="product-grid">
+
+<!-- IMAGE -->
+
+<div class="product-gallery">
+
+<div class="product-image-main">
+<img id="mainProductImage" src="./assets/3 point charger (1).png">
+</div>
+
+<div class="product-thumbs">
+
+<img src="./assets/3 point charger (1).png" class="thumb active" onclick="changeImage(this)">
+<img src="./assets/Single Socket (1).png" class="thumb" onclick="changeImage(this)">
+<img src="./assets/Single Socket (1).png" class="thumb" onclick="changeImage(this)">
+
+</div>
+
+</div>
+
+
+<!-- CONFIG -->
+
+<div class="product-config">
+
+<h1 class="product-title">GLIDE 3</h1>
+
+<p class="product-subtitle">Three Point EV Charger</p>
+
+<div class="power-badge">
+
+⚡ <span id="powerPill">11 kW</span> Charging
+
+</div>
+
+
+
+<!-- SOCKET TYPE -->
+
+<div class="config-block">
+
+<p class="config-label">Socket Type</p>
+
+<div class="config-options">
+
+<button class="config-btn active" id="btn6a">6A</button>
+<button class="config-btn" id="btn16a">16A</button>
+
+</div>
+
+</div>
+
+
+<!-- CONNECTIVITY -->
+
+<div class="config-block">
+
+<p class="config-label">Connectivity</p>
+
+<div class="config-options">
+
+<button class="config-btn active" id="btnWifi">WiFi</button>
+<button class="config-btn" id="btn4g">4G</button>
+
+</div>
+
+</div>
+
+
+<!-- COMPATIBILITY -->
+
+<div class="compatibility">
+
+<span class="vehicle">🛵</span>
+<span class="vehicle">🛺</span>
+<span class="vehicle icon-4w" style="display:none;">🚗</span>
+
+<p id="compatNote">Compatible with 2 & 3 wheelers</p>
+
+</div>
+
+
+<!-- PRICE -->
+
+<div class="product-price">
+
+₹<span id="price">12000</span>
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="product-actions">
+
+<button class="btn-outline">Add to Cart</button>
+
+<button class="btn-primary">Buy Now</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WHY GLIDE -->
+<section class="why-glide">
+
+<div class="why-container">
+
+<h2 class="why-title">Why Choose GLIDE 3</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+<div class="why-icon">⚡</div>
+<h3>Triple Charging Ports</h3>
+<p>Charge multiple EVs simultaneously with three independent charging sockets.</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">📊</div>
+<h3>Smart Monitoring</h3>
+<p>Track energy usage and charging sessions through real-time analytics.</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">🔒</div>
+<h3>Advanced Protection</h3>
+<p>Built-in voltage, current, leakage and temperature protection systems.</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">📱</div>
+<h3>Remote Control</h3>
+<p>Monitor and manage chargers remotely through cloud connectivity.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SPECIFICATIONS -->
+<section class="specs-wrap">
+
+<div class="spec-title">⚡ EV Charger Specification</div>
+
+
+
+<div class="spec-block">
+
+<h3>General</h3>
+
+<div class="spec-two-col">
+
+<div class="spec-text">Model <span id="specModel">GLIDE3-6A-WiFi</span></div>
+<div class="spec-text">Color <span>Off-White</span></div>
+<div class="spec-text">Dimensions <span>400 × 300 × 110 mm</span></div>
+<div class="spec-text">Weight <span>2.8 kg</span></div>
+
+<div class="spec-text">Weather Protection <span>IP54 Rated</span></div>
+<div class="spec-text">Authentication <span>QR Code</span></div>
+<div class="spec-text">Interoperability <span>OCPP 1.6</span></div>
+
+</div>
+
+</div>
+
+
+
+<div class="spec-block">
+
+<h3>Technical</h3>
+
+<div class="spec-two-col">
+
+<div class="spec-text">Max Power <span id="specPower">11 kW</span></div>
+<div class="spec-text">Input Voltage <span>240V Single Phase</span></div>
+<div class="spec-text">Output Voltage <span>240V per Socket</span></div>
+<div class="spec-text">Max Current <span>16A</span></div>
+
+<div class="spec-text">Frequency <span>50Hz</span></div>
+<div class="spec-text">Socket Type <span id="specSocket">Type-D 6A</span></div>
+<div class="spec-text">Connectivity <span id="specConn">WiFi, BLE</span></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- RESOURCES -->
+<section class="resources-section">
+
+<div class="resources-overlay"></div>
+
+<div class="resources-content">
+
+<div class="resources-text">
+
+<h2>Explore our Expert Resources</h2>
+
+<p>
+Download warranty guides and user manuals to get the most out
+of your VJRA charging solutions.
+</p>
+
+</div>
+
+
+<div class="resources-cards">
+
+<div class="resource-card">
+
+<div class="card-icon">📄</div>
+
+<h4>Glide 3 Product Manual</h4>
+
+<p>Discover technical specifications and features.</p>
+
+</div>
+
+
+<div class="resource-card">
+
+<div class="card-icon">🛡️</div>
+
+<h4>Glide 3 Warranty Guide</h4>
+
+<p>Understand product warranty coverage.</p>
+
+</div>
+
+</div>
+
+
+<div class="download-btn-wrap">
+
+<button class="download-btn">
+
+⬇ Download Resource
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+
+<img src="./assets/logo.png" class="footer-logo">
+
+<p>
+VJRA Technologies builds smart energy solutions including EV charging infrastructure,
+smart prepaid metering and industrial energy monitoring.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Company</h4>
+
+<ul>
+
+<li><a href="product.html">Products</a></li>
+<li><a href="index.html#about">About Us</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Products</h4>
+
+<ul>
+
+<li><a href="prod1.html">GLIDE 1</a></li>
+<li><a href="prod2.html">GLIDE 3</a></li>
+<li><a href="prod3.html">Smart Meter</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>Contact</h4>
+
+<p>
+Email:<br>
+<a href="mailto:support@vjratechnologies.com">
+support@vjratechnologies.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>© 2026 VJRA Technologies LLP | All Rights Reserved</p>
+
+</div>
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+<script>
+ 
+let selectedAmp = "6A";      // default
+let selectedConn = "Wifi";  // default
+
+const priceMap = {
+  "6A_Wifi": 12000,
+  "16A_Wifi": 13500,
+  "6A_GSM": 16500,
+  "16A_GSM": 18000
+};
+
+const priceEl = document.getElementById("price");
+
+function updatePrice() {
+  priceEl.innerText = priceMap[selectedAmp + "_" + selectedConn];
+}
+
+// Amp buttons
+
+
+// Update spec table
+function updateSpecs() {
+  const modelEl = document.getElementById("specModel");
+  const powerEl = document.getElementById("specPower");
+  const socketEl = document.getElementById("specSocket");
+  const connEl = document.getElementById("specConn");
+  const powerPill = document.getElementById("powerPill");
+
+  const amp = selectedAmp;
+  const conn = selectedConn;
+
+  const power = amp === "16A" ? "22 kW" : "11 kW";
+  const connLabel = conn === "GSM" ? "GSM, BLE" : "WiFi, BLE";
+  const model = "GLIDE3-" + amp + "-" + (conn === "GSM" ? "4G" : "WiFi");
+
+  if (modelEl) modelEl.textContent = model;
+  if (powerEl) powerEl.textContent = power;
+  if (socketEl) socketEl.textContent = "Type D - Domestic " + amp;
+  if (connEl) connEl.textContent = connLabel;
+  if (powerPill) powerPill.textContent = power;
+}
+
+// Update compatibility icons
+function updateCompatibility() {
+  const icon4w = document.querySelector(".icon-4w");
+  const compatNote = document.getElementById("compatNote");
+  if (selectedAmp === "16A") {
+    icon4w.style.display = "inline";
+    compatNote.innerHTML = "✔ Compatible with 2, 3 & 4 wheelers";
+  } else {
+    icon4w.style.display = "none";
+    compatNote.innerHTML = "✔ Compatible with 2 & 3 wheelers";
+  }
+}
+btn6a.onclick = () => {
+  selectedAmp = "6A";
+  btn6a.classList.add("active");
+  btn16a.classList.remove("active");
+  updatePrice();
+  updateCompatibility();
+  updateSpecs();
+};
+
+btn16a.onclick = () => {
+  selectedAmp = "16A";
+  btn16a.classList.add("active");
+  btn6a.classList.remove("active");
+  updatePrice();
+  updateCompatibility();
+  updateSpecs();
+};
+
+// Connectivity buttons
+btnWifi.onclick = () => {
+  selectedConn = "Wifi";
+  btnWifi.classList.add("active");
+  btn4g.classList.remove("active");
+  updatePrice();
+  updateSpecs();
+};
+
+btn4g.onclick = () => {
+  selectedConn = "GSM";
+  btn4g.classList.add("active");
+  btnWifi.classList.remove("active");
+  updatePrice();
+  updateSpecs();
+};
+
+// Default price
+updatePrice();
+updateSpecs();
+
+// Toggle product info on mobile
+const toggleBtn = document.getElementById("toggleInfoBtn");
+const productInfo = document.querySelector(".product-info");
+
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", function() {
+    productInfo.classList.toggle("show");
+    toggleBtn.textContent = productInfo.classList.contains("show") 
+      ? "Hide Details ↑" 
+      : "View Details ↓";
+  });
+}
+
+
+
+</script>
+
+<script src="navbar.js"></script>
+
+
+</body>
+</html>

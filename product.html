@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VJRA Technologies | Products</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="products.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html"><img src="./assets/logo.png" class="logo" > </a>
+
+    <!-- MENU MOVED INSIDE nav-left -->
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+
+      <li><a href="product.html">Product</a></li>
+
+    
+     
+
+      <li class="dropdown">
+        <span class="drop-btn">
+          Portals
+          <span class="arrow">▾</span>
+        </span>
+        <ul class="dropdown-menu">
+          <li><a href="https://viz.vjratechnologies.com">EV CHARGING</a></li>
+          <li><a href="https://smeter.vjratechnologies.com/login">SMART METER</a></li>
+        </ul>
+      </li>
+     <li> <a href ="index.html">Contact Us</a></li>
+
+    </ul>
+    <!-- MOBILE HAMBURGER -->
+    <div class="mobile-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+    <!-- THEME TOGGLE -->
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+
+  <!-- USER -->
+  <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="user-dropdown">
+      <a href="login.html">🔐 Login</a>
+      <a href="register.html">📝 Register</a>
+    </div>
+  </div>
+</nav>
+<div class="menu-overlay"></div>
+
+  <!-- HERO -->
+  <section class="product-hero">
+    <div class="hero-inner">
+      <h1>Smart Energy Monitoring Solutions</h1>
+      <p>EV Charging • Smart Meters • Industrial Monitoring</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">Our Products</h2>
+
+      <div class="products-grid">
+        <!-- GLIDE1 -->
+        <div class="product-card" onclick="location.href='prod1.html'">
+          <img src="./assets/Single Socket (1).png" alt="GLIDE1">
+          <h3>GLIDE1</h3>
+          <p class="subtitle">Single Point EV Charger</p>
+          <ul>
+            <li>Starting just ₹5000</li>
+            <li>Multiple connectivity options</li>
+            <li>Built-in safety protection</li>
+          </ul>
+          <button type="button">View Details</button>
+        </div>
+
+        <!-- GLIDE3 -->
+        <div class="product-card" onclick="location.href='prod2.html'">
+          <img src="./assets/3 point charger (1).png" alt="GLIDE3">
+          <h3>GLIDE3</h3>
+          <p class="subtitle">Three Point EV Charger</p>
+          <ul>
+            <li>Starting just ₹12000</li>
+            <li>Multiple connectivity options</li>
+            <li>Built-in safety protection</li>
+          </ul>
+          <button type="button">View Details</button>
+        </div>
+
+        <!-- SMART METER -->
+        <div class="product-card" onclick="location.href='prod3.html'">
+          <img src="./assets/smart meter (1).png" alt="Smart Meter">
+          <h3>SMART METER</h3>
+          <p class="subtitle">Single Phase Smart Energy Meter</p>
+          <ul>
+            <li>Starting just ₹4000</li>
+            <li>Real-time energy monitoring</li>
+            <li>Cloud dashboard analytics</li>
+          </ul>
+          <button type="button">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <img src="./assets/logo.png" alt="VJRA Technologies Logo" class="footer-logo">
+        <p>
+          Smart energy solutions for EV charging, smart metering and industrial monitoring.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="prod1.html">GLIDE1</a></li>
+          <li><a href="prod2.html">GLIDE3</a></li>
+          <li><a href="prod3.html">SMART METER</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 VJRA Technologies LLP</p>
+    </div>
+  </footer>
+
+  <script src="navbar.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

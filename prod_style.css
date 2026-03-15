@@ -1,0 +1,692 @@
+/* =========================================================
+GLOBAL VARIABLES
+========================================================= */
+
+html{
+overflow-x:hidden;
+scroll-behavior:smooth;
+}
+
+html,body{
+width:100%;
+max-width:100%;
+
+--bg-main:#050b14;
+--bg-secondary:#020b1d;
+--bg-card:rgba(255,255,255,0.06);
+
+--text-main:#eaf6ff;
+--accent:#04bfbf;
+
+--nav-bg:linear-gradient(90deg,#001f3f,#003566);
+--nav-text:#ffffff;
+
+--footer-bg:#0b0f14;
+--footer-text:#ccc;
+--footer-heading:#ffffff;
+
+--footer-link:#aaa;
+--footer-link-hover:#00c853;
+
+--footer-border:#222;
+}
+
+
+/* =========================================================
+PRODUCT SECTION
+========================================================= */
+
+.product-section{
+max-width:1200px;
+margin:80px auto;
+padding:0 20px;
+}
+
+.card-row{
+display:flex;
+justify-content:center;
+}
+
+.product-card{
+
+width:100%;
+
+background:var(--bg-secondary);
+
+border-radius:18px;
+
+padding:45px;
+
+box-shadow:0 20px 45px rgba(0,0,0,0.5);
+
+transition:0.35s ease;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 50px rgba(0,224,255,0.25);
+}
+
+
+/* =========================================================
+PRODUCT GRID
+========================================================= */
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+
+/* =========================================================
+PRODUCT IMAGE
+========================================================= */
+
+.product-gallery{
+text-align:center;
+}
+
+.product-image-main{
+
+background:#f4f6f8;
+
+border-radius:20px;
+
+height:380px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.product-image-main img{
+
+max-height:100%;
+
+max-width:100%;
+
+object-fit:contain;
+
+}
+
+.product-thumbs{
+
+display:flex;
+
+gap:12px;
+
+margin-top:16px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.thumb{
+
+width:70px;
+height:60px;
+
+background:#fff;
+
+border-radius:10px;
+
+padding:6px;
+
+cursor:pointer;
+
+border:2px solid transparent;
+
+transition:0.25s;
+
+}
+
+.thumb:hover{
+border-color:#00e0ff;
+}
+
+.thumb.active{
+border-color:#04bfbf;
+}
+
+
+/* =========================================================
+PRODUCT INFO
+========================================================= */
+
+.product-title{
+font-size:40px;
+font-weight:800;
+margin-bottom:6px;
+color:var(--text-main);
+}
+
+.product-subtitle{
+color:#00e0ff;
+margin-bottom:20px;
+}
+
+
+/* POWER BADGE */
+
+.power-badge{
+
+display:inline-block;
+
+background:rgba(0,224,255,0.12);
+
+border:1px solid rgba(0,224,255,0.35);
+
+color:#00e0ff;
+
+padding:10px 18px;
+
+border-radius:25px;
+
+font-weight:600;
+
+margin-bottom:28px;
+
+}
+
+
+/* =========================================================
+CONFIG OPTIONS
+========================================================= */
+
+.config-block{
+margin-bottom:26px;
+}
+
+.config-label{
+
+font-size:13px;
+
+color:#aaa;
+
+margin-bottom:10px;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+}
+
+.config-options{
+
+display:flex;
+
+gap:14px;
+
+}
+
+.config-btn{
+
+flex:1;
+
+padding:14px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,255,255,0.2);
+
+background:rgba(255,255,255,0.05);
+
+color:#fff;
+
+cursor:pointer;
+
+transition:0.25s;
+
+}
+
+.config-btn:hover{
+border-color:#00e0ff;
+}
+
+.config-btn.active{
+
+background:#00e0ff;
+
+color:#000;
+
+border-color:#00e0ff;
+
+}
+
+
+/* =========================================================
+COMPATIBILITY
+========================================================= */
+
+.compatibility{
+
+margin:25px 0;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.vehicle{
+font-size:24px;
+}
+
+.compatibility p{
+font-size:13px;
+color:#9ca3af;
+}
+
+
+/* =========================================================
+PRICE
+========================================================= */
+
+.product-price{
+
+font-size:38px;
+
+font-weight:800;
+
+margin-top:15px;
+
+color:#22c55e;
+
+}
+
+
+/* =========================================================
+BUTTONS
+========================================================= */
+
+.product-actions{
+
+display:flex;
+
+gap:15px;
+
+margin-top:25px;
+
+}
+
+.btn-primary{
+
+background:#22c55e;
+
+border:none;
+
+padding:14px 28px;
+
+border-radius:30px;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid #22c55e;
+
+padding:14px 28px;
+
+border-radius:30px;
+
+color:#22c55e;
+
+cursor:pointer;
+
+}
+
+
+/* =========================================================
+WHY GLIDE
+========================================================= */
+
+.why-glide{
+padding:80px 20px;
+}
+
+.why-container{
+
+max-width:1200px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.why-title{
+
+font-size:36px;
+
+margin-bottom:50px;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:rgba(255,255,255,0.04);
+
+border:1px solid rgba(255,255,255,0.08);
+
+border-radius:18px;
+
+padding:30px;
+
+transition:0.35s ease;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 45px rgba(0,224,255,0.2);
+
+border-color:#00e0ff;
+
+}
+
+.why-icon{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.why-card h3{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.why-card p{
+
+font-size:14px;
+
+color:#9ca3af;
+
+line-height:1.6;
+
+}
+
+
+/* =========================================================
+SPECIFICATIONS
+========================================================= */
+
+.specs-wrap{
+
+max-width:1100px;
+
+margin:90px auto;
+
+padding:0 20px;
+
+color:#eaf6ff;
+
+}
+
+.spec-title{
+
+text-align:center;
+
+font-size:32px;
+
+margin-bottom:40px;
+
+font-weight:700;
+
+background:linear-gradient(90deg,#22c55e,#38bdf8);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.spec-block{
+margin-bottom:70px;
+}
+
+.spec-block h3{
+
+font-size:20px;
+
+margin-bottom:20px;
+
+color:#04bfbf;
+
+}
+
+.spec-two-col{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:18px 40px;
+
+}
+
+.spec-text{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:15px;
+
+color:#9aa4b2;
+
+}
+
+.spec-text span{
+
+color:white;
+
+font-weight:500;
+
+}
+
+
+/* =========================================================
+RESOURCES SECTION
+========================================================= */
+
+.resources-section{
+
+position:relative;
+
+min-height:420px;
+
+background:linear-gradient(135deg,rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url("./assets/g.webp") center/cover no-repeat;
+
+border-radius:20px;
+
+overflow:hidden;
+
+margin:60px 20px;
+
+}
+
+.resources-content{
+
+position:relative;
+
+z-index:2;
+
+display:grid;
+
+grid-template-columns:1fr 1.2fr;
+
+gap:50px;
+
+padding:60px;
+
+color:#fff;
+
+}
+
+.resources-text h2{
+
+font-size:36px;
+
+margin-bottom:15px;
+
+}
+
+.resources-text p{
+
+font-size:16px;
+
+color:#e0e0e0;
+
+line-height:1.7;
+
+}
+
+.resources-cards{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.resource-card{
+
+background:rgba(255,255,255,0.9);
+
+color:#222;
+
+border-radius:16px;
+
+padding:25px;
+
+width:260px;
+
+transition:0.35s;
+
+}
+
+.resource-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 50px rgba(0,224,255,0.25);
+
+}
+
+.resource-card h4{
+
+font-size:18px;
+
+margin-bottom:8px;
+
+color:#00e0ff;
+
+}
+
+.resource-card p{
+
+font-size:14px;
+
+color:#555;
+
+}
+
+.download-btn{
+
+margin-top:20px;
+
+background:linear-gradient(135deg,#00e0ff,#22c55e);
+
+color:#000;
+
+padding:12px 28px;
+
+border-radius:30px;
+
+border:none;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+.product-grid{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.why-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.spec-two-col{
+grid-template-columns:1fr;
+}
+
+.resources-content{
+grid-template-columns:1fr;
+padding:40px;
+}
+
+}
+
+@media(max-width:600px){
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.product-title{
+font-size:28px;
+}
+
+.product-image-main{
+height:260px;
+}
+
+.product-actions{
+flex-direction:column;
+}
+
+}

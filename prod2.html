@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VJRA Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">          <!-- index base -->
+<link rel="stylesheet" href="prod_style.css">     <!-- product layout -->
+<link rel="stylesheet" href="product-navbar.css"> <!-- navbar FIX (LAST) -->
+</head>
+<body>
+
+<!-- HERO -->
+ <nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html"><img src="./assets/logo.png" class="logo" > </a>
+
+    <!-- MENU MOVED INSIDE nav-left -->
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="#">Company</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Cotact Us</a></li>
+      <li><a href="#services">Services</a></li>
+
+      <li class="dropdown">
+        <span class="drop-btn">VIZ ▾</span>
+        <ul class="dropdown-menu">
+          <li><a href="#card">⚡ Charging Solution</a></li>
+          <li><a href="#card">📊 Smart Meter</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- MOBILE HAMBURGER -->
+    <div class="mobile-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <div class="nav-right">
+    <!-- THEME TOGGLE (before login) -->
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <!-- USER -->
+    <div class="user-menu">
+      <span class="user-icon">👤</span>
+<div class="user-dropdown">
+      <a href="login.html">🔐 Login</a>
+      <a href="register.html">📝 Register</a>
+    </div>
+    </div>
+  </div>
+
+ <div class="floating-cart-wrapper">
+  <button class="floating-cart">
+    🛒
+  </button>
+  <span class="cart-badge">3</span>
+</div>
+</nav>
+
+  <section>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Specifications Section</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="product-section">
+
+<div class="card-row">
+
+<!-- CARD 1 -->
+
+
+<!-- CARD 2 -->
+<div class="product-card">
+  <div class="product-grid">
+
+    <!-- LEFT : Images -->
+    <div class="product-media">
+
+    <div class="main-image">
+      <img id="mainProductImage" src="./assets/3 point charger (1).png" alt="GLIDE3 EV Charger">
+    </div>
+
+    <div class="thumbnail-row">
+      <img src="./assets/3 point charger (1).png" class="thumb active"
+           onclick="changeImage(this)">
+      <img src="./assets/Single Socket (1).png" class="thumb"
+           onclick="changeImage(this)">
+      <img src="./assets/Single Socket (1).png" class="thumb"
+           onclick="changeImage(this)">
+      <img src="./assets/Single Socket (1).png" class="thumb"
+           onclick="changeImage(this)">
+    </div>
+    <div class="compatibility-box">
+  <p class="compat-title vehicle-icons ">Compatibility:<span>🛵</span>
+    <span>🛺</span>
+    <span>🚗</span></p>
+
+  
+
+  
+
+  <div class="compat-note">
+    ✔ This charging socket is compatible with all EVs</div>
+  
+</div>
+    </div>
+    <!-- RIGHT : Product Info -->
+    <div class="product-info">
+      <h1>GLIDE 3</h1>
+      <p class="subtitle">Three Point EV Charger</p>
+
+      <div class="power-pill">Power Rating 10 kW</div>
+
+      <!-- OPTIONS -->
+      <div class="connector-box">
+
+        <!-- Ampere -->
+        <div class="option-box">
+          <p class="title">Socket Type</p>
+          <button class="btn active" id="btn6a">6A</button>
+          <button class="btn" id="btn16a">16A</button>
+        </div>
+
+        <!-- Connectivity -->
+        <div class="option-box">
+          <p class="title">Connectivity</p>
+          <button class="btn active" id="btnWifi">WiFi</button>
+          <button class="btn" id="btn4g">4G</button>
+        </div>
+
+      </div>
+
+      <!-- PRICE -->
+      <div class="price">
+        ₹<span id="price">12000</span>
+      </div>
+
+      <!-- SPECS -->
+     
+
+      <!-- ACTIONS -->
+      <div class="actions">
+        <button class="btn outline">Add to Cart</button>
+        <button class="btn solid">Buy Now</button>
+      </div>
+
+    </div>
+    
+    <!-- TOGGLE BUTTON FOR MOBILE -->
+    <button class="toggle-info-btn" id="toggleInfoBtn">View Details ↓</button>
+  </div>
+</div>
+
+</section>
+
+<br><br>
+<section >
+<div>
+  <p class="desc"><b>Why Choose GLIDE3 The  Three-Point EV Charger?</b></p><br>
+  <p class="desc">>GLIDE3 is designed for reliable, convenient, and hassle-free electric vehicle charging. Its three-point plug compatibility ensures easy access to power in almost any standard electrical outlet, making it an ideal solution for home, office, and travel use.
+
+With a compact and portable design, GLIDE3 offers plug-and-play charging without the need for complex installations, helping EV owners get started quickly and cost-effectively. It delivers safe and stable charging performance with built-in protection features, ensuring your vehicle and electrical system remain secure at all times.
+
+GLIDE3 is perfect for daily overnight charging, emergency top-ups, and flexible use across multiple locations. Its universal compatibility, affordability, and ease of use make it a smart choice for first-time EV users and experienced drivers alike.</p>
+</div>
+<br><br>
+</section>
+<div class="spec-container">
+
+    <div class="spec-title">⚡ EV Charger Specifications</div>
+
+    <div class="spec-grid">
+
+        <!-- General Specifications -->
+        <div class="spec-card">
+            <h3>General Specifications</h3>
+            <table>
+                <tr><td>Model</td><td>GLIDE3</td></tr>
+                <tr><td>Color</td><td>Off-White</td></tr>
+                <tr><td>Dimensions</td><td>400 × 300 × 110 mm</td></tr>
+                <tr><td>Weight</td><td>2.8 kg</td></tr>
+                <tr><td>Weather Protection</td><td>IP54 Rated</td></tr>
+                <tr><td>OTA Support</td><td>Yes</td></tr>
+                <tr><td>User Authentication</td><td>QR Code</td></tr>
+                <tr><td>Interoperability</td><td>Supports OCPP 1.6</td></tr>
+                <tr><td>Charging Indication</td><td>LED</td></tr>
+            </table>
+        </div>
+
+        <!-- Technical Specifications -->
+        <div class="spec-card">
+            <h3>Technical Specifications</h3>
+            <table>
+                <tr><td>Max Power</td><td>10 kW</td></tr>
+                <tr><td>Input Voltage</td><td>Single Phase - 240VAC</td></tr>
+                <tr><td>Output Voltage</td><td>240VAC each socket</td></tr>
+                <tr><td>Max Output Current</td><td>16A each socket</td></tr>
+                <tr><td>Rated Frequency</td><td>50Hz</td></tr>
+                <tr><td>Socket Type</td><td>Type D - Domestic/Industrial</td></tr>
+                <tr><td>Connectivity</td><td>WiFi, BLE, GSM (optional)</td></tr>
+                <tr><td>Installation Type</td><td>Wall Mount / Stand Mount</td></tr>
+            </table>
+        </div>
+
+        <!-- Protection & Safety -->
+        <div class="spec-card">
+            <h3>Protection & Safety</h3>
+            <table>
+                <tr><td>Auto Power Cut-Off</td><td>Yes</td></tr>
+                <tr><td>Power Theft Protection</td><td>Enabled</td></tr>
+                <tr><td>Energy Measurement</td><td>Inbuilt</td></tr>
+                <tr><td>Over & Under Voltage Protection</td><td>Yes</td></tr>
+                <tr><td>Over Temperature Protection</td><td>Yes</td></tr>
+                <tr><td>MCB Overload Protection</td><td>Yes</td></tr>
+                <tr><td>RCCB Leakage Protection</td><td>Yes</td></tr>
+            </table>
+        </div>
+
+        <!-- Software & Updates -->
+        <div class="spec-card">
+            <h3>Software & Updates</h3>
+            <table>
+                <tr><td>Firmware Updates</td><td>Lifetime Free</td></tr>
+                <tr><td>OTA Updates</td><td>Regular via WiFi</td></tr>
+                <tr><td>User Web App</td><td>Available</td></tr>
+                <tr><td>Admin Analytics Panel</td><td>Yes</td></tr>
+                <tr><td>Warranty</td><td>5 Years (Except Physical Damage)</td></tr>
+                <tr><td>Cloud Data Storage</td><td>Secure Cloud System</td></tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+  </section>
+   <section class="resources-section">
+  <div class="resources-overlay"></div>
+
+  <div class="resources-content">
+    <!-- LEFT TEXT -->
+    <div class="resources-text">
+      <h2>Explore our Expert Resources</h2>
+      <p>
+        Download warranty guides, and user manuals to get the most out
+        of your Vjara Technology charging solutions.
+      </p>
+    </div>
+
+    <!-- RIGHT CARDS -->
+    <div class="resources-cards">
+      <div class="resource-card">
+        <div class="card-icon">📄</div>
+        <h4>Glide 2 : Product manual</h4>
+        <p>
+          Discover key technical specifications and features of our products.
+        </p>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-icon">🛡️</div>
+        <h4>Glide 2: Warranty guide</h4>
+        <p>
+          Understand the warranty coverage for your Vjara Technology products.
+        </p>
+      </div>
+    </div>
+
+    <!-- DOWNLOAD BUTTON -->
+    <div class="download-btn-wrap">
+      <button class="download-btn">
+        ⬇ Download Resource
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-box">
+
+        <h2>WE ARE ALWAYS AT YOUR SERVICE</h2>
+        <p>Our dedicated team is available 24/7 & 365 days to assist you with any queries to make your journey smoother.</p>
+         <br>
+        <div class="contact-info">
+            <p>📞 For Support call us at: <b>+91 8447746385</b> | ⏰ Timings: 24/7 (Mon-Sun)</p>
+            <p>📞 For Sales call us at: <b>+91 8045688455</b> | ⏰ Timings: 9:00am - 6:00pm (Mon-Sun)</p>
+        </div>
+         <br>
+        <h3>Alternatively, you may email us your query:</h3>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="City">
+            </div>
+
+            <textarea placeholder="Details about your query / grievance"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</section>
+
+  
+<!-- footer -->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="logo.png" alt="Green Energy" class="footer-logo">
+      <p>
+        At Greentech Energy, we are dedicated to shaping the future of sustainable
+        transportation through cutting-edge EV charging solutions.
+      </p>
+    </div>
+
+    <!-- Company Links -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="./index.html">About Us</a></li>
+        <li><a href="./contactus.html">Contact Us</a></li>
+        <li><a href="#">VIZ</a></li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-col">
+      <h4>Products</h4>
+      
+    </div>
+
+    <!-- Charging Solutions -->
+    <div class="footer-col">
+      <h4>VIZ</h4>
+      <ul>
+        <li><a href="#">⚡ Charging Solution</a></li>
+          <li><a href="#">📊 Smart Meter</a></li>
+      </ul>
+    </div>
+
+    <!-- Partner -->
+    <div class="footer-col">
+      <h4>Contact With Us</h4>
+      <ul>
+        <li><a href="./contactus.html">Connect with us</a></li>
+      </ul>
+    </div> 
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>
+        2102, Spaces Western Heights,<br>
+        JP Road, Andheri West,<br>
+        Mumbai, Maharashtra 400053
+      </p>
+      <p>📞 +91 98925 98195</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>| <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+ 
+let selectedAmp = "6A";      // default
+let selectedConn = "Wifi";  // default
+
+const priceMap = {
+  "6A_Wifi": 12000,
+  "16A_Wifi": 13500,
+  "6A_GSM": 16500,
+  "16A_GSM": 18000
+};
+
+const priceEl = document.getElementById("price");
+
+function updatePrice() {
+  priceEl.innerText = priceMap[selectedAmp + "_" + selectedConn];
+}
+
+// Amp buttons
+btn6a.onclick = () => {
+  selectedAmp = "6A";
+  btn6a.classList.add("active");
+  btn16a.classList.remove("active");
+  updatePrice();
+};
+
+btn16a.onclick = () => {
+  selectedAmp = "16A";
+  btn16a.classList.add("active");
+  btn6a.classList.remove("active");
+  updatePrice();
+};
+
+// Connectivity buttons
+btnWifi.onclick = () => {
+  selectedConn = "Wifi";
+  btnWifi.classList.add("active");
+  btn4g.classList.remove("active");
+  updatePrice();
+};
+
+btn4g.onclick = () => {
+  selectedConn = "GSM";
+  btn4g.classList.add("active");
+  btnWifi.classList.remove("active");
+  updatePrice();
+};
+
+// Default price
+updatePrice();
+
+// Toggle product info on mobile
+const toggleBtn = document.getElementById("toggleInfoBtn");
+const productInfo = document.querySelector(".product-info");
+
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", function() {
+    productInfo.classList.toggle("show");
+    toggleBtn.textContent = productInfo.classList.contains("show") 
+      ? "Hide Details ↑" 
+      : "View Details ↓";
+  });
+}
+
+
+
+</script>
+
+<script src="navbar.js"></script>
+
+
+</body>
+</html>

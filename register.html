@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register – VJRA Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .auth-page { min-height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+    .auth-box { width: 100%; max-width: 460px; background: var(--contact-box-bg); padding: 40px; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+    .auth-box h1 { color: var(--contact-heading); margin-bottom: 8px; font-size: 1.75rem; }
+    .auth-box p.sub { color: var(--contact-text); margin-bottom: 24px; font-size: 0.95rem; }
+    .auth-box label { display: block; color: var(--contact-text); margin-bottom: 6px; font-size: 0.9rem; }
+    .auth-box input { width: 100%; padding: 12px 14px; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: var(--contact-input-bg); color: var(--contact-input-text); font-size: 1rem; box-sizing: border-box; }
+    .auth-box input:focus { outline: none; border-color: var(--accent); }
+    .auth-box button[type="submit"] { width: 100%; padding: 14px; border: none; border-radius: 8px; background: linear-gradient(135deg, #00e0ff, #0284c7); color: #00111f; font-weight: 600; font-size: 1rem; cursor: pointer; margin-top: 8px; }
+    .auth-box button[type="submit"]:hover { opacity: 0.95; }
+    .auth-link { text-align: center; margin-top: 20px; }
+    .auth-link a { color: var(--accent); text-decoration: none; }
+    .auth-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html"><img src="./assets/logo.png" class="logo" alt="VJRA"></a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="#">Company</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li class="dropdown">
+        <span class="drop-btn">VIZ ▾</span>
+        <ul class="dropdown-menu">
+          <li><a href="product.html#card">⚡ Charging Solution</a></li>
+          <li><a href="product.html#card">📊 Smart Meter</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="mobile-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <div class="user-menu">
+    <span class="user-icon">👤</span>
+    <div class="user-dropdown">
+      <a href="login.html">🔐 Login</a>
+      <a href="register.html">📝 Register</a>
+    </div>
+  </div>
+</nav>
+
+<main class="auth-page">
+  <div class="auth-box">
+    <h1>Register</h1>
+    <p class="sub">Create your account</p>
+    <form action="#" method="post">
+      <label for="reg-name">Name</label>
+      <input type="text" id="reg-name" name="name" placeholder="Your full name" required>
+      <label for="reg-email">Email</label>
+      <input type="email" id="reg-email" name="email" placeholder="your@email.com" required>
+      <label for="reg-address">Address</label>
+      <input type="text" id="reg-address" name="address" placeholder="Street, City, State, PIN" required>
+      <label for="reg-password">Password</label>
+      <input type="password" id="reg-password" name="password" placeholder="••••••••" required minlength="6">
+      <label for="reg-confirm">Confirm Password</label>
+      <input type="password" id="reg-confirm" name="confirm_password" placeholder="••••••••" required minlength="6">
+      <button type="submit">Create account</button>
+    </form>
+    <p class="auth-link">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <img src="assets/logo.png" alt="VJRA" class="footer-logo" style="height:50px">
+      <p>Smart energy technology for EV charging and metering.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Mumbai, Maharashtra 400053<br>📞 +91 98925 98195</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>| <a href="#">Privacy Policy</a></p></div>
+</footer>
+
+<script src="navbar.js"></script>
+</body>
+</html>
